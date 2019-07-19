@@ -11,7 +11,7 @@ class Elecbill
 	void domestic()
 	{
 		if(s<=100)
-			System.out.println("your bills is"+s+1);
+			System.out.println("your bills is"+s*1);
 		else if(s>=101 && s <=200)
 			System.out.println("your bill is"+s*2.50);
 		else if(s>=201 &&  s<=500)
@@ -40,7 +40,6 @@ class Eb
 {
 	public static void main(String args[])
 	{
-		int i=0;
 		Elecbill bill =new Elecbill();
 		Scanner ch=new Scanner(System.in);
 		System.out.println("\nenter the name:");
@@ -53,7 +52,7 @@ class Eb
 		bill.pmr=ch.nextFloat();
 		bill.condetails();
 		bill.unit();
-		int l=bill.conno;
+		int i=bill.conno;
 		if(i<=5 )
 			bill.domestic();
 		else
